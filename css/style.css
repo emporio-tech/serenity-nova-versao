@@ -158,13 +158,91 @@ a:hover {
 }
 
 /***************************************/
-footer {
-  margin-top: 10px;
-  text-align: center;
-  padding: 18px;
-  font-size: 1.3rem;
+/*************** start footer**************/
+#footer-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+#footer-1{
+  
+  display: flex;
+  align-items: top;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-top: 10px;
+  border-top: 2px solid var(--color1);
+  height: 200px;
+}
+.grid-footer-1{
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+.grid-footer-1 i{
+  font-size: 3rem;
+  padding: 5px;
+}
+.grid-footer-1-txt-h4 {
+  font-size: 1.5rem;
 }
 
+.grid-footer-1-txt-h5 {
+  font-size: 1rem;
+ }
+ .grid-footer-a{
+  text-transform: none;
+  font-size: 1.3rem;
+ }
+
+#footer-2{
+  width:100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: var(--color1);
+ 
+}
+.footer-copy-h5 {
+  background-color: var(--color1);
+  color: var(--color3);
+}
+.footer-copy{
+  align-items: center;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+#item-menu-footer{
+  display: flex;
+  font-size: 10px;
+  gap: 20px;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+.item-menu-footer-a {
+ text-transform: uppercase;
+ font-weight: 300;
+ background-color: var(--color1);
+ color: var(--color3);
+}
+.footer-copy-a{
+  text-transform: uppercase;
+ font-weight: 300;
+ font-size: 1rem;
+ background-color: var(--color1);
+ color: var(--color3);
+}
+.menu-footer {
+  background-color: var(--color1);
+}
+
+
+
+/***************************************/
 @media (max-width: 600px) {
   #menu {
     display: block;
@@ -256,4 +334,28 @@ footer {
 .grid {
   width: 100%;
 }
+
+/***** footer ******/
+#footer-section {
+  display: flex;
+  align-items: center;
+}
+#footer-1{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 400px;
+  border-top: 2px solid var(--color1);
+  
+}
+.grid-footer-1 {
+  padding-top: ;
+}
+
+#footer-2 {
+  display: none;
+}
+
 }
